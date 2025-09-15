@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>クイズアプリ</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>クイズアプリ</h1>
-    <div id="quiz">
-      <p id="question">ここに問題文が入ります</p>
-      <div id="options"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クイズアプリ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>クイズアプリ</h1>
+      <div id="quiz">
+        <p id="question">ここに問題文が入ります</p>
+        <div id="options"></div>
+      </div>
+      <button id="nextBtn" style="display:none;">次の問題</button>
+      <p id="score"></p>
     </div>
-    <button id="nextBtn">次の問題</button>
-    <p id="score"></p>
-  </div>
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
-</body>
+
+    <!-- TypeScript をコンパイルした JS を読み込む -->
+    <script type="module" src="js/main.js" defer></script>
+  </body>
 </html>
